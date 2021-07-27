@@ -8,27 +8,36 @@
     <style>
         table{
             border-collapse: collapse;
+            --border: white;
+       
         }
         td{
-            
-            width: 50px;
+            width:70%;
             height: 50px;
         }
-        .input_left{
-            text-align: right;
+        
+        .td_corlo{
+            background-color:white ;
         }
-    </style>
+        .td_bottom_right{
+            border-bottom-left-radius: 40px;
+        }
+        .td_top_left{
+            border-top-left-radius: 40px;
+        }
+        </style>
+   
 </head>
 <body>
-    <br><br><br><br>
-    <div style="width: 100%; background-color: rgb(207, 207, 230);">
+    <br>
+    <div style="width: 90%; background-color: rgb(37, 37, 139);padding: 40px 0;">
         <form action="http://lamdu.com" method="POST" >
-            <table border="0" style="width: 100%;">
+            <table border="0" style="width: 100%; background-color: rgb(37, 37, 139)">
                 <tr style="text-align: center;">
-                    <td rowspan="8">
-                        <img src="./Rocket-launch-50.png" width="100px" height="100px"
+                    <td style="background-color: rgb(37, 37, 139);" rowspan="8">
+                        <img src="./Rocket-launch-50.png" width="100px" height="100px">
                         <br>
-                        <h3>Welcome</h3>
+                        <h2>Welcome</h2>
                         <br>
                         You are 30 seconds away 
                         <br>
@@ -36,21 +45,17 @@
                         <br>
                         money!
                     </td>
-                    <td colspan="3"></td>
-                   
-                    
-                </tr>
-            <tr>
-                
-                <td colspan="2" align="right"><button>Employee</button></td>
-                <td><button>Hier</button></td>
+                <tr class="td_corlo">
+                <td class="td_top_left"></td>
+                <td  colspan="1" align="right"><button>Employee</button></td>
+                <td><button style="width: 80px;">Hier</button></td>
             </tr>
-            <tr>
+            <tr class="td_corlo">
                 
-                <td style="text-align: center;" colspan="2">Apply as a Employee</td>
-               
+                <td style="text-align: center;" colspan="2"><h1>Apply as a Employee</h1></td>
+               <td></td>
             </tr>
-            <tr >
+            <tr class="td_corlo">
                
                 <td >
                     <input style="width: 310px;height: 30px;" type="text" name="First Name" placeholder="First Name *">
@@ -58,17 +63,19 @@
                 <td class="input_left">
                     <input  style="width: 310px;height: 30px;" type="email" name="Your Email" placeholder="Your Email *">
                 </td>
+                <td></td>
             </tr>
-            <tr>
+            <tr class="td_corlo">
                 
-                <td  >
+                <td >
                     <input style="width: 310px;height: 30px;" type="text" name="Last Name" placeholder="Last Name *">
                 </td>
                 <td class="input_left">
                     <input style="width: 310px;height: 30px;" type="tel" name="Your Phone" placeholder="Your Phone *">
                 </td>
+                <td></td>
             </tr>
-            <tr>
+            <tr class="td_corlo">
               
                 <td>
                     <input style="width: 310px;height: 30px;" type="password" name="password" placeholder="Password *">
@@ -79,8 +86,9 @@
                         <option></option>
                     </select>
                 </td>
+                <td></td>
             </tr>
-            <tr>
+            <tr class="td_corlo">
                
                 <td>
                     <input style="width: 310px;height: 30px;" type="password" name="Confirm Password" placeholder="Confirm Password *">
@@ -88,30 +96,29 @@
                 <td class="input_left">
                     <input style="width: 310px;height: 30px;" type="text" name="Enter Your Answer" placeholder="Enter Your Answer *">
                 </td>
+                <td></td>
           </tr>
-          <tr>
+          <tr class="td_corlo">
                 
               <td >
                   <label><input type="radio" name="Gender" value="Male">Male</label>
                   <label><input type="radio" name="Gender" value="Femaale">Femaale</label>
               </td>
+              <td ></td>
               <td></td>
               
           </tr>
-          <tr>
-            <td style="text-align: center;">
-                <button style="width: 110px;height: 40px; background-color: rgb(18, 16, 158);">Login</button>
+          <tr class="td_corlo">
+            <td style="text-align: center;background-color:rgb(37, 37, 139);">
+                <button style="width: 110px;height: 40px; background-color:white;">Login</button>
             </td>
-            <td></td>
+            <td class="td_bottom_right"></td>
             <td style="text-align: right;">
                 <button style="width: 110px;height: 40px; background-color: rgb(18, 16, 158);">Register</button>
             </td>
             <td></td>
         </tr>
-        <tr>
-            <td rowspan="4"></td>
-           
-        </tr>
+      
             </table>
         </form>
     </div>
