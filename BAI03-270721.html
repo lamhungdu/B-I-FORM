@@ -20,30 +20,34 @@
             background-color:white ;
         }
         .td_bottom_right{
-            border-bottom-left-radius: 40px;
+            border-bottom-left-radius: 50px;
         }
         .td_top_left{
-            border-top-left-radius: 40px;
+            border-top-left-radius: 50px;
         }
         </style>
    
 </head>
 <body>
     <br>
-    <div style="width: 90%; background-color: rgb(37, 37, 139);padding: 40px 0;">
+    <!--
+        background-color: rgb(37, 37, 139)
+        background-color: rgb(37, 37, 139)
+    -->
+    <div style="width: 90%; background: linear-gradient(135deg, #71b7e6, #9b59b6) ;padding: 40px 0;">
         <form action="http://lamdu.com" method="POST" >
-            <table border="0" style="width: 100%; background-color: rgb(37, 37, 139)">
+            <table border="1" style="width: 100%; background: linear-gradient(135deg, #71b7e6, #9b59b6)">
                 <tr style="text-align: center;">
-                    <td style="background-color: rgb(37, 37, 139);" rowspan="8">
+                    <td style="background: linear-gradient(135deg, #71b7e6);color:white;" rowspan="8">
                         <img src="./Rocket-launch-50.png" width="100px" height="100px">
                         <br>
-                        <h2>Welcome</h2>
-                        <br>
-                        You are 30 seconds away 
-                        <br>
-                        from earning your own
-                        <br>
-                        money!
+                        <h2 >Welcome</h2>
+                        <p >
+                            You are 30 seconds away 
+                            <br>
+                            from earning your own
+                            <br>
+                            money!</p>
                     </td>
                 <tr class="td_corlo">
                 <td class="td_top_left"></td>
@@ -101,22 +105,22 @@
           <tr class="td_corlo">
                 
               <td >
-                  <label><input type="radio" name="Gender" value="Male">Male</label>
+                  <label><input type="radio" name="Gender" value="Male" checked>Male</label>
                   <label><input type="radio" name="Gender" value="Femaale">Femaale</label>
               </td>
               <td ></td>
               <td></td>
               
           </tr>
-          <tr class="td_corlo">
-            <td style="text-align: center;background-color:rgb(37, 37, 139);">
+          <tr>
+            <td style="text-align: center;">
                 <button style="width: 110px;height: 40px; background-color:white;">Login</button>
             </td>
-            <td class="td_bottom_right"></td>
-            <td style="text-align: right;">
-                <button style="width: 110px;height: 40px; background-color: rgb(18, 16, 158);">Register</button>
+            <td style="background-color:white" class="td_bottom_right"></td>
+            <td style="text-align: right;background-color:white">
+                <button style="width: 110px;height: 40px; background-color: rgb(18, 16, 158);color: white;">Register</button>
             </td>
-            <td></td>
+            <td style="background-color:white"></td>
         </tr>
       
             </table>
